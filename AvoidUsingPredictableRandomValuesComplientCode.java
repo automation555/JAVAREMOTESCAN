@@ -4,6 +4,8 @@ package javacodechecker;
         import java.util.Random;
 
 public class AvoidUsingPredictableRandomValuesComplientCode {
+        
+        private Random r = new Random();
     //uses Secure random insted of random
     //Declare secure random outside the method
     static final SecureRandom secureRandom = new SecureRandom();
