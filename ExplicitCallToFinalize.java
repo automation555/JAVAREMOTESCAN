@@ -13,6 +13,12 @@ public class ExplicitCallToFinalize {
         object1.methodCall();
 
 
-
+	 object3.finalize();
+	     object4.finalize();
+	     object5.finalize();
+	     object6.finalize();
+	     object7.finalize();
+	     object8.finalize();
+	     object9.finalize();
     }
 }
