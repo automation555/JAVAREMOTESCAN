@@ -1,21 +1,104 @@
 package javacodechecker;
 
-import java.security.SecureRandom;
-import java.util.Random;
-
 public class Demo {
-    String randommethod(){
-        // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES
-        Random r = new Random();
-        return Long.toHexString(r.nextLong());
+    public void bad() throws Throwable
+    {
+        // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK
+        try
+        {
+            throw new IllegalArgumentException();
+        }
+        catch(IllegalArgumentException exceptIllegalArgument)
+        {
+            IO.writeLine("preventing incidental issues");
+        }
+        finally
+        {
+            if(true)
+            {
+                return;
+                System.out.println("Hi");
+            }
+        }
 
-        // EMB-ISSUE: CodeIssueNames.AVOID_USING_PREDICTABLE_RANDOM_VALUES/no-detect
-        SecureRandom secureRandom = new SecureRandom
-             object4.finalize();
-	     object5.finalize();
-	     object6.finalize();
-	     object7.finalize();
-	     object8.finalize();
-	     object9.finalize();
     }
+
+    public void bad1() throws Throwable
+    {
+        // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK
+        try
+        {
+            throw new IllegalArgumentException();
+        }
+        catch(IllegalArgumentException exceptIllegalArgument)
+        {
+            IO.writeLine("preventing incidental issues");
+        }
+        finally
+        {
+                return hello;
+            System.out.println("Hello");
+        }
+    }
+
+
+    private void good1() throws Throwable
+    {
+        // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK/no-detect
+        try
+        {
+            throw new IllegalArgumentException();
+        }
+        catch(IllegalArgumentException exceptIllegalArgument)
+        {
+            IO.writeLine("preventing incidental issues");
+        }
+        finally
+        {
+            IO.writeLine("In finally block, cleaning up");
+        }
+
+    }
+
+    private void good2() throws Throwable
+    {
+        // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK/no-detect
+        try
+        {
+            throw new IllegalArgumentException();
+        }
+        catch(IllegalArgumentException exceptIllegalArgument)
+        {
+            IO.writeLine("preventing incidental issues");
+        }
+        finally
+        {
+            IO.writeLine("In finally block, cleaning up");
+            return;
+        }
+
+    }
+    public void good3() throws Throwable
+    {
+        // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK/no-detect
+        try
+        {
+            throw new IllegalArgumentException();
+        }
+        catch(IllegalArgumentException exceptIllegalArgument)
+        {
+            IO.writeLine("preventing incidental issues");
+        }
+        finally
+        {
+            if(true)
+            {
+                System.out.println("Hi");
+                return;
+
+            }
+        }
+
+    }
+
 }
