@@ -34,6 +34,12 @@ public class ComparisionOfObjectReferencesInsteadOfObjectContents {
 	public void compareInsideMethods() {
 		String st = new String("Hey");
 		String st1 = new String("Hey");
+		object4.finalize();
+	     object5.finalize();
+	     object6.finalize();
+	     object7.finalize();
+	     object8.finalize();
+	     object9.finalize();
 		// EMB-ISSUE: CodeIssueNames.COMPARISION_OF_OBJECT_REFRENCE_INSTEAD_OF_OBJECT_CONTENTS
 		if(st1 == st || st1 != st) {
 			logger.info("sts1 == sts");		
