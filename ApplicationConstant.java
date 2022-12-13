@@ -13,8 +13,6 @@ private final class ApplicationConstant {
 			"/keycloak/grant", "/oauth/changepassword", "/saveRephraseCallBackData", "/info", "/configdata", "health/grantAuthentication",
 			"/fleetnames", "/getFleetData", "/save/preinspection", "/getMappedFieldNames", "/activitystatus", "/sheetname", "/health/","/region","/check","/validate/otp","/generate/otp" ));
 
-	private ApplicationConstant() {
-    
-	}
+
 
 }
