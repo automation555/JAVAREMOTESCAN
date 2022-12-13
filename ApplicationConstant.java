@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 @Component
-public class ApplicationConstant {
+private final class ApplicationConstant {
 
 	
 	public static final List<String> WHITELIST_URL = new ArrayList(Arrays.asList("/oauth/grant", "/oauth/grant/login", "/oauth/revoke/",
