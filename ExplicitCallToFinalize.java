@@ -20,5 +20,20 @@ public class ExplicitCallToFinalize {
 	     object7.finalize();
 	     object8.finalize();
 	     object9.finalize();
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	     System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	     System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
+	    System.out.println("Hello");
     }
 }
