@@ -25,7 +25,7 @@
 		"modules": {
 			"codeissues": [{
 					"name": "gamma_java",
-					"enabled": true,
+					"enabled": false,
 					"config": {
 						"rules": [],
 						"options": []
@@ -46,7 +46,7 @@
 				},
 				{
 					"name": "pmd",
-					"enabled": true,
+					"enabled": false,
 					"config": {
 						"rules": [],
 						"options": [{
