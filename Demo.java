@@ -17,8 +17,7 @@ public class Demo {
             if(true)
             {
                 return;
-                System.out.println("Hi");
-                System.out.println("added");
+               
             }
         }
 
@@ -38,7 +37,7 @@ public class Demo {
         finally
         {
                 return hello;
-            System.out.println("Hello");
+            
         }
     }
 
@@ -94,8 +93,7 @@ public class Demo {
         {
             if(true)
             {
-                System.out.println("Hi");
-                System.out.println("Hi");
+             
                 return;
 
             }
