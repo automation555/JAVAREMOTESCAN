@@ -18,6 +18,7 @@ public class Demo {
             {
                 return;
                 System.out.println("Hi");
+                System.out.println("added");
             }
         }
 
@@ -93,6 +94,7 @@ public class Demo {
         {
             if(true)
             {
+                System.out.println("Hi");
                 System.out.println("Hi");
                 return;
 
