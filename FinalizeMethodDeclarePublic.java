@@ -6,6 +6,7 @@ public final class FinalizeMethodDeclarePublic extends Applet {
 	public void finalize() {
 		
 		System.out.println("Code issue added");
+		super.finalize();
 		
 		} 
 }
