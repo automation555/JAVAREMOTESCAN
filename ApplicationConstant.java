@@ -16,10 +16,11 @@ private final class ApplicationConstant {
 
 	public void printOutput(){
 		
-		int i=0;
+		//int i=0;
+                int j,int k;  
 		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
+		//System.out.println("Hello");
+		//System.out.println("Hello");
 	
 		
 		object1.finalize();
