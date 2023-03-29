@@ -17,8 +17,9 @@ private final class ApplicationConstant {
 	public void printOutput(){
 		
 		//int i=0;
-                int j,int k;  
-		System.out.println("Hello");
+                int j=88;
+                int k=80;
+		//System.out.println("Hello");
 		//System.out.println("Hello");
 		//System.out.println("Hello");
 	
