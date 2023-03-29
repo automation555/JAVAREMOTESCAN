@@ -15,30 +15,13 @@ private final class ApplicationConstant {
 
 
 	public void printOutput(){
+		
+		int i=0;
 		System.out.println("Hello");
 		System.out.println("Hello");
 		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
-		System.out.println("Hello");
+	
+		
 		object1.finalize();
 		object2.finalize();
 		object3.finalize();
