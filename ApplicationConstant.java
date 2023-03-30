@@ -19,9 +19,9 @@ private final class ApplicationConstant {
 		//int i=0;
                 int j=88;
                 int k=80;
-		//System.out.println("Hello");
-		//System.out.println("Hello");
-		//System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
 	
 		
 		object1.finalize();
