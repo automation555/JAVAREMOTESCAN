@@ -3,6 +3,7 @@ package javacodechecker;
 public class Demo {
     public void bad() throws Throwable
     {
+        int x=0;
         // EMB-ISSUE: CodeIssueNames.RETURN_IN_FINALLY_BLOCK
         try
         {
@@ -19,10 +20,7 @@ public class Demo {
                 return;
                 
                 System.out.println("code issues added");
-                System.out.println("code issues added");
-                System.out.println("code issues added");
-                System.out.println("code issues added");
-                System.out.println("code issues added");
+                
                
             }
         }
