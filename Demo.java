@@ -17,6 +17,12 @@ public class Demo {
             if(true)
             {
                 return;
+                
+                System.out.println("code issues added");
+                System.out.println("code issues added");
+                System.out.println("code issues added");
+                System.out.println("code issues added");
+                System.out.println("code issues added");
                
             }
         }
