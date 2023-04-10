@@ -32,6 +32,12 @@ public class SensitiveDataInSerializableClass2 implements Serializable {
                 catch (SQLException exceptSql)
                 {
                     IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+                    System.out.println("code issue added");
+                    System.out.println("code issue added");
+                    System.out.println("code issue added");
+                    System.out.println("code issue added");
+                    System.out.println("code issue added");
+                    System.out.println("code issue added");
                 }
             }
         }
