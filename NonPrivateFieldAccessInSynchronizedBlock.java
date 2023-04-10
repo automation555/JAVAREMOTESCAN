@@ -6,12 +6,11 @@ class NonPrivateFieldAccessInSynchronizedBlock {
 	void foo() {
         // Some processing
 			synchronized(lock) {
+				
+				int x=0;
 				statuses.add("Running");
 				System.out.println("code issues added");
-				System.out.println("code issues added");
-				System.out.println("code issues added");
-				System.out.println("code issues added");
-				System.out.println("code issues added");
+				
 			}
 		}
         // Some more processing
