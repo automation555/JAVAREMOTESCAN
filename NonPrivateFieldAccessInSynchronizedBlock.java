@@ -7,6 +7,11 @@ class NonPrivateFieldAccessInSynchronizedBlock {
         // Some processing
 			synchronized(lock) {
 				statuses.add("Running");
+				System.out.println("code issues added");
+				System.out.println("code issues added");
+				System.out.println("code issues added");
+				System.out.println("code issues added");
+				System.out.println("code issues added");
 			}
 		}
         // Some more processing
