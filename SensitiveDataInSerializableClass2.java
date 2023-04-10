@@ -8,6 +8,7 @@ public class SensitiveDataInSerializableClass2 implements Serializable {
 
     protected void setPassword(String password)
     {
+        int i=0;
         passwordHash = password;
     }
 
@@ -35,9 +36,9 @@ public class SensitiveDataInSerializableClass2 implements Serializable {
                     System.out.println("code issue added");
                     System.out.println("code issue added");
                     System.out.println("code issue added");
-                    System.out.println("code issue added");
-                    System.out.println("code issue added");
-                    System.out.println("code issue added");
+                    
+                    
+                    
                 }
             }
         }
