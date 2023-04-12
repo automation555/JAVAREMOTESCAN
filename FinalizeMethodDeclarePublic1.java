@@ -17,6 +17,9 @@ public class FinalizeMethodDeclarePublic1 extends Applet {
 
 	        super.finalize();
                 System.out.println(""Let know");
+		System.out.println(""Let know");
+	        System.out.println(""Let know");
+				   
 
 	    }
 	} 
